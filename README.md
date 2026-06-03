@@ -46,7 +46,7 @@ Il terzo esercizio richiede invece un'attività di debugging logico, per cui dov
 
 Nel caso può essere utile, usare il numero storia: `48195009` per testare le funzionalità di recupero dati e visualizzazione. Poi per vedere la pagina Profilo, cliccare sull'autore `andreww591` così da essere reindirizzati alla pagina `profile.html?user=andreww591` e verificare che i dati siano corretti.
 
-### 1. INTEGRAZIONI DATI (60p)
+### 1. INTEGRAZIONI DATI
 
 **Obiettivo:** Ripristinare il sistema di recupero e visualizzazione delle storie nella pagina principale. Il sito per ora da errore o mostra dati incompleti.
 
