@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signal Atlas - Archivio</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='12' y='12' width='76' height='76' rx='16' fill='%23FFD700'/><text x='50' y='67' text-anchor='middle' font-family='Arial, sans-serif' font-size='48' font-weight='700' fill='%23000000'>S</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main-content">
+        <section class="page-section">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">Archivio</p>
+                    <h3>Le storie che hai scelto di tenere da parte</h3>
+                    <p class="section-subtitle">
+                        Qui ritrovi in un attimo ciò che hai salvato dal radar, con la stessa lista interattiva della sezione principale.
+                    </p>
+                </div>
+            </div>
+
+            <div class="archive-toolbar">
+                <div class="controls-group">
+                    <div class="field">
+                        <label for="archive-sort-select">Ordina la lista</label>
+                        <select id="archive-sort-select">
+                            <option value="saved-desc" selected>Score decrescente</option>
+                            <option value="saved-asc">Score crescente</option>
+                            <option value="time-desc">Più recenti</option>
+                            <option value="time-asc">Più vecchie</option>
+                        </select>
+                    </div>
+                </div>
+                <button id="clear-archive-button" class="btn btn-danger" type="button">Svuota lista</button>
+            </div>
+        </section>
+
+        <section class="page-section archive-layout">
+            <div id="archive-summary" class="archive-summary"></div>
+            <div id="archive-root" class="story-list"></div>
+        </section>
+    </main>
+
+    <script type="module" src="../scripts/pages/archive.js"></script>
+</body>
+</html>

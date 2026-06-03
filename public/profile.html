@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signal Atlas - Autori</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='12' y='12' width='76' height='76' rx='16' fill='%23FFD700'/><text x='50' y='67' text-anchor='middle' font-family='Arial, sans-serif' font-size='48' font-weight='700' fill='%23000000'>S</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main-content">
+        <section class="page-section">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">Autori</p>
+                    <h3>Profilo e attività di un utente</h3>
+                    <p class="section-subtitle">
+                        Recupera i dettagli di un profilo Hacker News e le sue ultime submission in una vista più editoriale.
+                    </p>
+                </div>
+            </div>
+
+            <div class="controls-bar">
+                <div class="controls-group">
+                    <div class="field">
+                        <label for="user-id-input">Username</label>
+                        <input id="user-id-input" type="text" placeholder="es. pg">
+                    </div>
+                </div>
+                <button id="load-user-button" class="btn btn-primary" type="button">Carica autore</button>
+            </div>
+        </section>
+
+        <section class="page-section profile-layout">
+            <div id="profile-root"></div>
+            <div id="activity-root"></div>
+        </section>
+    </main>
+
+    <script type="module" src="../scripts/pages/profile.js"></script>
+</body>
+</html>

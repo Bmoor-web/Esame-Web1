@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signal Atlas - Radar</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='12' y='12' width='76' height='76' rx='16' fill='%23FFD700'/><text x='50' y='67' text-anchor='middle' font-family='Arial, sans-serif' font-size='48' font-weight='700' fill='%23000000'>S</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main-content">
+        <section class="page-section">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">Radar</p>
+                    <h3>Scorri le storie più interessanti e apri quella che vuoi leggere</h3>
+                    <p class="section-subtitle">
+                        Ogni riga porta al focus della story, così puoi passare dalla panoramica alla lettura senza passaggi inutili.
+                    </p>
+                </div>
+            </div>
+
+            <!-- TODO 2: Mancano le classi per alcuni elementi di questo gruppo di controlli. Cercale negli altri HTMLs e trova le classi corrette da applicare -->
+            <div class="controls-bar">
+                 <div class="">
+                    <div class="">
+                        <label for="top-limit-select">Quante storie vuoi vedere</label>
+                        <select id="top-limit-select">
+                            <option value="12">12 storie</option>
+                            <option value="18">18 storie</option>
+                            <option value="24" selected>24 storie</option>
+                            <option value="36">36 storie</option>
+                        </select>
+                    </div>
+                </div>
+                <button id="top-refresh-button" class="" type="button">Aggiorna radar</button>
+            </div>
+
+            <div id="top-summary" class="archive-summary"></div>
+        </section>
+
+        <section class="page-section" id="top-feed-section">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">Lista</p>
+                    <h3>Storie in evidenza</h3>
+                </div>
+            </div>
+            <div id="top-feed-root" class="story-list"></div>
+        </section>
+    </main>
+
+    <script type="module" src="../scripts/pages/radar.js"></script>
+</body>
+</html>

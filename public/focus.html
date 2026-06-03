@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signal Atlas - Focus</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='12' y='12' width='76' height='76' rx='16' fill='%23FFD700'/><text x='50' y='67' text-anchor='middle' font-family='Arial, sans-serif' font-size='48' font-weight='700' fill='%23000000'>S</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main-content">
+        <section class="page-section">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">Focus</p>
+                    <h3>Apri una story e segui il thread</h3>
+                    <p class="section-subtitle">
+                        Inserisci un ID story per ottenere il pannello, i metadati essenziali e la discussione ad albero.
+                    </p>
+                </div>
+            </div>
+
+            <div class="controls-bar">
+                <div class="controls-group">
+                    <div class="field">
+                        <label for="thread-id-input">Story ID</label>
+                        <input id="thread-id-input" type="text" inputmode="numeric" placeholder="es. 45876493">
+                    </div>
+                </div>
+                <button id="load-thread-button" class="btn btn-primary" type="button">Carica focus</button>
+            </div>
+        </section>
+
+        <section class="page-section thread-layout">
+            <div id="thread-summary" class="thread-hero"></div>
+            <div id="thread-root"></div>
+        </section>
+    </main>
+
+    <script type="module" src="../scripts/pages/focus.js"></script>
+</body>
+</html>
