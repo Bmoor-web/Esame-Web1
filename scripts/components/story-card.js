@@ -86,12 +86,10 @@ export function createStoryCard({
         </div>
 
         <div class="story-card__meta">
-            <span class = "chip"> 
-                <p class = "chip--score">${scoreLabel}</p>
-                <p class = "chip--comments">${commentsLabel}</p>
-                <p class = "chip--time">${timeLabel}</p>
-                <p class = "chip--author">${authorLink}</p>
-            </span>
+            <span class = "chip chip--score">${scoreLabel}</span>
+            <span class = "chip chip--comments">${commentsLabel}</span>
+            <span class = "chip chip--time">${timeLabel}</span>
+            <span class = "chip chip--author">${authorLink}</span>            
         </div>
 
         <p class="story-card__excerpt">${excerpt}</p>
