@@ -631,13 +631,15 @@ a:focus-visible {
 
 .records-table th,
 .records-table td {
-
+    padding: 15px;
     text-align: left;
     vertical-align: top;
+    border-bottom: 1px solid var(--line);
 }
 
 .records-table th {
-
+    background-color: var(--bg);
+    color: var(--accent-2);
     font-size: 0.82rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
