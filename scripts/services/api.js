@@ -51,6 +51,16 @@ function mapItem(item) {
  * @returns {Promise<any>}
  */
 async function requestJson(url, errorPrefix) {
+    try {
+        const res = await fetch(url);
+        if (!res.ok) throw new Error("Errore nella fetch", errorPrefix, res.statusText);
+
+        const dati = res.json;
+        return dati;
+    } catch (error) {
+        throw new Error("Errore imprvisti o di rete", errorPrefix);
+    }
+
     // TODO 1: Implementare la fetch e restituire il JSON parsato
     // Il parametro url contiene un già un endpoint completo e bisogna solo fare la chiamata
     // Poi in caso di errore rella risposta, mandare un messaggio di errore che contenga il prefisso errorPrefix e l'eventuale messaggio di errore restituito dalla fetch
