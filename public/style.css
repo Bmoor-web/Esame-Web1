@@ -192,7 +192,7 @@ button {
 }
 
 .nav-link.active {
-    box-shadow: 8px 5px 5px 1px var(--accent);
+    box-shadow: 5px 5px 5px 1px var(--accent);
     border-color: var(--accent);
 }
 

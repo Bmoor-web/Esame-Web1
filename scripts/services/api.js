@@ -53,10 +53,11 @@ function mapItem(item) {
 async function requestJson(url, errorPrefix) {
     try {
         const res = await fetch(url);
-        if (!res.ok) throw new Error("Errore nella fetch", errorPrefix, res.statusText);
+        if (!res.ok) throw new Error(`${errorPrefix}: ${response.status} ${response.statusText}`);
 
-        const dati = res.json;
+        const dati = await res.json();
         return dati;
+
     } catch (error) {
         throw new Error("Errore imprvisti o di rete", errorPrefix);
     }
